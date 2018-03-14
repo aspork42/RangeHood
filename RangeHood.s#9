@@ -6303,7 +6303,7 @@ GPIO23 - Low</text>
 <instance part="GND20" gate="1" x="-99.06" y="109.22"/>
 <instance part="GND21" gate="1" x="-63.5" y="109.22"/>
 <instance part="RELAY_BOARD" gate="A" x="203.2" y="-35.56"/>
-<instance part="P+9" gate="1" x="182.88" y="-25.4"/>
+<instance part="P+9" gate="1" x="182.88" y="-22.86"/>
 <instance part="GND22" gate="1" x="182.88" y="-50.8"/>
 <instance part="AIR_SENSOR" gate="A" x="38.1" y="43.18"/>
 <instance part="P+10" gate="1" x="20.32" y="60.96"/>
@@ -6319,7 +6319,7 @@ GPIO23 - Low</text>
 <instance part="JP4" gate="A" x="-63.5" y="238.76" rot="R90"/>
 <instance part="JP5" gate="A" x="-63.5" y="218.44" rot="R90"/>
 <instance part="+3V7" gate="G$1" x="-91.44" y="289.56"/>
-<instance part="GND24" gate="1" x="-93.98" y="233.68"/>
+<instance part="GND24" gate="1" x="-35.56" y="218.44"/>
 <instance part="P+12" gate="1" x="-93.98" y="220.98"/>
 </instances>
 <busses>
@@ -6348,11 +6348,6 @@ GPIO23 - Low</text>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <wire x1="-154.94" y1="147.32" x2="-154.94" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="PCB1" gate="G$1" pin="5V@4"/>
-</segment>
-<segment>
-<pinref part="RELAY_BOARD" gate="A" pin="1"/>
-<wire x1="200.66" y1="-27.94" x2="182.88" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
@@ -6450,6 +6445,12 @@ GPIO23 - Low</text>
 <pinref part="JP5" gate="A" pin="31"/>
 <wire x1="-45.72" y1="215.9" x2="-43.18" y2="215.9" width="0.1524" layer="91"/>
 <junction x="-45.72" y="215.9"/>
+</segment>
+<segment>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="182.88" y1="-25.4" x2="182.88" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="RELAY_BOARD" gate="A" pin="1"/>
+<wire x1="182.88" y1="-27.94" x2="200.66" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6582,54 +6583,55 @@ GPIO23 - Low</text>
 <pinref part="T2" gate="G1" pin="E"/>
 </segment>
 <segment>
+<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="JP5" gate="A" pin="4"/>
+<wire x1="-81.28" y1="223.52" x2="-78.74" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="6"/>
+<wire x1="-78.74" y1="223.52" x2="-76.2" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-78.74" y="223.52"/>
+<pinref part="JP5" gate="A" pin="8"/>
+<wire x1="-76.2" y1="223.52" x2="-73.66" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-76.2" y="223.52"/>
+<pinref part="JP5" gate="A" pin="10"/>
+<wire x1="-73.66" y1="223.52" x2="-71.12" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-73.66" y="223.52"/>
+<pinref part="JP5" gate="A" pin="12"/>
+<wire x1="-71.12" y1="223.52" x2="-68.58" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-71.12" y="223.52"/>
+<pinref part="JP5" gate="A" pin="14"/>
+<wire x1="-68.58" y1="223.52" x2="-66.04" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-68.58" y="223.52"/>
+<pinref part="JP5" gate="A" pin="16"/>
+<wire x1="-66.04" y1="223.52" x2="-63.5" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-66.04" y="223.52"/>
+<pinref part="JP5" gate="A" pin="18"/>
+<wire x1="-63.5" y1="223.52" x2="-60.96" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-63.5" y="223.52"/>
+<pinref part="JP5" gate="A" pin="20"/>
+<wire x1="-60.96" y1="223.52" x2="-58.42" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-60.96" y="223.52"/>
+<pinref part="JP5" gate="A" pin="22"/>
+<wire x1="-58.42" y1="223.52" x2="-55.88" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-58.42" y="223.52"/>
+<pinref part="JP5" gate="A" pin="24"/>
+<wire x1="-55.88" y1="223.52" x2="-53.34" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-55.88" y="223.52"/>
+<pinref part="JP5" gate="A" pin="26"/>
+<wire x1="-53.34" y1="223.52" x2="-50.8" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-53.34" y="223.52"/>
+<pinref part="JP5" gate="A" pin="28"/>
+<wire x1="-50.8" y1="223.52" x2="-48.26" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-50.8" y="223.52"/>
+<pinref part="JP5" gate="A" pin="30"/>
+<wire x1="-48.26" y1="223.52" x2="-45.72" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-48.26" y="223.52"/>
+<pinref part="JP5" gate="A" pin="32"/>
+<wire x1="-45.72" y1="223.52" x2="-43.18" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-45.72" y="223.52"/>
+<wire x1="-43.18" y1="223.52" x2="-35.56" y2="223.52" width="0.1524" layer="91"/>
+<junction x="-43.18" y="223.52"/>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="JP4" gate="A" pin="1"/>
-<wire x1="-93.98" y1="236.22" x2="-81.28" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="A" pin="3"/>
-<wire x1="-81.28" y1="236.22" x2="-78.74" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-81.28" y="236.22"/>
-<pinref part="JP4" gate="A" pin="5"/>
-<wire x1="-78.74" y1="236.22" x2="-76.2" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-78.74" y="236.22"/>
-<pinref part="JP4" gate="A" pin="7"/>
-<wire x1="-76.2" y1="236.22" x2="-73.66" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-76.2" y="236.22"/>
-<pinref part="JP4" gate="A" pin="9"/>
-<wire x1="-73.66" y1="236.22" x2="-71.12" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-73.66" y="236.22"/>
-<pinref part="JP4" gate="A" pin="11"/>
-<wire x1="-71.12" y1="236.22" x2="-68.58" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-71.12" y="236.22"/>
-<pinref part="JP4" gate="A" pin="13"/>
-<wire x1="-68.58" y1="236.22" x2="-66.04" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-68.58" y="236.22"/>
-<pinref part="JP4" gate="A" pin="15"/>
-<wire x1="-66.04" y1="236.22" x2="-63.5" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-66.04" y="236.22"/>
-<pinref part="JP4" gate="A" pin="17"/>
-<wire x1="-63.5" y1="236.22" x2="-60.96" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-63.5" y="236.22"/>
-<pinref part="JP4" gate="A" pin="19"/>
-<wire x1="-60.96" y1="236.22" x2="-58.42" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-60.96" y="236.22"/>
-<pinref part="JP4" gate="A" pin="21"/>
-<wire x1="-58.42" y1="236.22" x2="-55.88" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-58.42" y="236.22"/>
-<pinref part="JP4" gate="A" pin="23"/>
-<wire x1="-55.88" y1="236.22" x2="-53.34" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-55.88" y="236.22"/>
-<pinref part="JP4" gate="A" pin="25"/>
-<wire x1="-53.34" y1="236.22" x2="-50.8" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-53.34" y="236.22"/>
-<pinref part="JP4" gate="A" pin="27"/>
-<wire x1="-50.8" y1="236.22" x2="-48.26" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-50.8" y="236.22"/>
-<pinref part="JP4" gate="A" pin="29"/>
-<wire x1="-48.26" y1="236.22" x2="-45.72" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-48.26" y="236.22"/>
-<pinref part="JP4" gate="A" pin="31"/>
-<wire x1="-45.72" y1="236.22" x2="-43.18" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-45.72" y="236.22"/>
+<wire x1="-35.56" y1="223.52" x2="-35.56" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
@@ -7215,13 +7217,13 @@ GPIO23 - Low</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="FAN1" gate="G$1" pin="2"/>
-<wire x1="-86.36" y1="-2.54" x2="-93.98" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="T2" gate="G1" pin="C"/>
-<wire x1="-93.98" y1="-2.54" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="D2" gate="1" pin="A"/>
 <wire x1="-93.98" y1="-5.08" x2="-93.98" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="-5.08" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="FAN1" gate="G$1" pin="2"/>
+<wire x1="-86.36" y1="-2.54" x2="-93.98" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-2.54" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-5.08"/>
 </segment>
 </net>

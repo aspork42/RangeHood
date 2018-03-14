@@ -6240,6 +6240,10 @@ See the follwing turorial for more information on this type of special footprint
 GPIO25 - HIGH
 GPIO24 - Med
 GPIO23 - Low</text>
+<text x="83.82" y="114.3" size="1.778" layer="91">MQ4 - Methane</text>
+<text x="81.28" y="68.58" size="1.778" layer="91">MQ6 - LPG</text>
+<text x="83.82" y="20.32" size="1.778" layer="91">MQ7 - CO</text>
+<text x="83.82" y="-22.86" size="1.778" layer="91">MQ8 - Hydrogen</text>
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="109.22" y="93.98"/>
@@ -7252,11 +7256,6 @@ GPIO23 - Low</text>
 <label x="-68.58" y="154.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="109.22" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
-<label x="96.52" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="38"/>
 <wire x1="-96.52" y1="185.42" x2="-96.52" y2="195.58" width="0.1524" layer="91"/>
 <label x="-96.52" y="193.04" size="1.778" layer="95" rot="R90"/>
@@ -7284,6 +7283,11 @@ GPIO23 - Low</text>
 <pinref part="JP1" gate="A" pin="32"/>
 <wire x1="-104.14" y1="185.42" x2="-104.14" y2="195.58" width="0.1524" layer="91"/>
 <label x="-104.14" y="193.04" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="109.22" y1="-2.54" x2="96.52" y2="-2.54" width="0.1524" layer="91"/>
+<label x="96.52" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">

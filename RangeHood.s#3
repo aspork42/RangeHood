@@ -7104,6 +7104,11 @@ GPIO23 - Low</text>
 <wire x1="-144.78" y1="119.38" x2="-144.78" y2="109.22" width="0.1524" layer="91"/>
 <label x="-144.78" y="109.22" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<wire x1="-134.62" y1="177.8" x2="-134.62" y2="167.64" width="0.1524" layer="91"/>
+<label x="-134.62" y="167.64" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="GPIO17" class="0">
 <segment>
@@ -7385,11 +7390,6 @@ GPIO23 - Low</text>
 <pinref part="PCB1" gate="G$1" pin="GPIO14"/>
 <wire x1="-144.78" y1="147.32" x2="-144.78" y2="160.02" width="0.1524" layer="91"/>
 <label x="-144.78" y="154.94" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="7"/>
-<wire x1="-134.62" y1="177.8" x2="-134.62" y2="167.64" width="0.1524" layer="91"/>
-<label x="-134.62" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="8"/>
